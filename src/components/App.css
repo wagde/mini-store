@@ -1,0 +1,57 @@
+.ProductList{
+width: 80%;
+height: 100%;
+display: grid;
+grid-template-columns:repeat(auto-fill, 20%);
+grid-gap:5%;
+margin: auto;
+text-align: center;
+}
+.Product{
+    border: solid 1px gray;
+    padding: 5%;
+
+}
+.img-cont{
+    height: 80%;
+}
+
+.img-cont img{
+    width: 80%;
+    height: 100%;
+}
+.Product .info{
+    display: flex;
+    flex-direction: column;
+
+ 
+}
+.Product .info >.name{
+    font-weight: bold;
+    font-size: 20px;
+}
+.Product .edit,.Product .Cancel,.Product .Save{
+    position: relative;
+    float: right;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 5%;
+}
+.Product .edit-Product {
+    display: flex;
+    flex-direction: column;
+
+}
+.Product .edit-Product >div:not(.edit-buttons){
+
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+}
+.filters{
+    text-align: center;
+    margin-bottom: 5%;
+}
+select{
+    margin: 1%;
+}
